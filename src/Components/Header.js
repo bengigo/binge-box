@@ -1,3 +1,5 @@
+import './Header.css';
+
 const Header = () => (
   <h1>WELCOME TO BINGE BOX</h1>
 );
