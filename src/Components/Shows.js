@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './Shows.css';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { fetchShows } from '../Redux/shows';
 
 const Shows = () => {
@@ -26,8 +27,9 @@ const Shows = () => {
     //     </article> */}
       {shows.map((show) => (
         <article key={show.id}>
-          {/* make this button a link when it's ready */}
-          <button key={show.id} type="button" className="details-link {show.id}">
+          <Link to="/show">
+
+            {/* make this button a link when it's ready */}
             <p className="icon">
               <span className="material-symbols-outlined">
                 arrow_circle_right
@@ -35,7 +37,7 @@ const Shows = () => {
             </p>
             <h2 className="show-name">{show.name}</h2>
             <p className="rating">{show.rating}</p>
-          </button>
+          </Link>
         </article>
       ))}
     </section>
