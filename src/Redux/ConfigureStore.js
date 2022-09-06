@@ -1,10 +1,10 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
 
-import fruitsReducer from './fruits';
+import showsReducer from './shows';
 
 const rootReducer = combineReducers({
-  fruits: fruitsReducer,
+  shows: showsReducer,
 });
 
 const store = configureStore({
