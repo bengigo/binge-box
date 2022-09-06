@@ -14,7 +14,7 @@ const showBasics = (data) => {
     language: show.language,
     genres: show.genres,
     runtime: show.runtime,
-    rating: show.rating,
+    rating: JSON.stringify(show.rating.average),
     topic: show.summary,
     poster: show.image.medium,
   }));
