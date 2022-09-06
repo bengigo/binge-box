@@ -6,16 +6,10 @@ import ShowDetails from './Components/ShowDetails';
 
 function App() {
   return (
-    // <div className="App">
-    //   <Header />
-    //   <SearchField />
-    //   <Shows />
-    // </div>
     <BrowserRouter>
       <div>
         <Header />
         <SearchField />
-        {/* <Shows /> */}
         <Routes>
           <Route path="/" element={<Shows />} />
           <Route path="/ShowDetails" element={<ShowDetails />} />

@@ -1,13 +1,5 @@
 import React from 'react';
 
-// const DetailedShow = () => (
-//   <span>COMING SOON</span>
-// );
-
-// export default detailedShow;
-
-// this file needt to be linked inside main display cards using toutes or whatever
-
 const ShowDetails = () => (
   <section className="details">
     {/* name */}
