@@ -1,0 +1,5 @@
+.main-display {
+    display: grid;
+    grid: 1fr / auto auto;
+
+}

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './Shows.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchShows } from '../Redux/shows';
 
@@ -26,7 +27,7 @@ const Shows = () => {
       {shows.map((show) => (
         <article key={show.id}>
           {/* make this button a link when it's ready */}
-          <button type="button" className="details-link {show.id}">
+          <button key={show.id} type="button" className="details-link {show.id}">
             <p className="icon">
               <span className="material-symbols-outlined">
                 arrow_circle_right
