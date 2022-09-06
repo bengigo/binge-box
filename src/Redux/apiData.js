@@ -1,3 +1,3 @@
-const baseUrl = 'https://www.fruityvice.com/api/fruit/all';
+const baseUrl = 'https://api.tvmaze.com/shows';
 
 export default baseUrl;
