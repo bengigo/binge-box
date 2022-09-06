@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './SearchField.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchShows } from '../Redux/shows';
 
@@ -17,9 +18,12 @@ const SearchField = () => {
       <p className="count">
         {shows.length}
         {' '}
-        shows available
+        SHOWS AVAILABLE
       </p>
-      <input />
+      <p className="genre-list">Options of genre: genre genre genre genre...</p>
+      <input className="search-bar" placeholder="enter genre" />
+      {' '}
+
     </section>
   );
 };
