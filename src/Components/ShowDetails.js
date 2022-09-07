@@ -1,16 +1,10 @@
-import React from 'react';
+// import React, { useEffect } from 'react';
+// import { useSelector, useDispatch } from 'react-redux';
+// import { useParams, useLocation } from 'react-router-dom';
+// import { fetchDetails, showDetails } from '../Redux/showDetails';
 
 const ShowDetails = () => (
-  <section className="details">
-    {/* name */}
-    <h3>bhvjö</h3>
-    {/* rating */}
-    {/* genre */}
-    {/* runtime */}
-    {/* language */}
-    {/* image */}
-    {/* topic */}
-  </section>
+  <p>hello</p>
 );
 
 export default ShowDetails;
