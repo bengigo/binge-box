@@ -1,6 +1,6 @@
 import baseUrl from './apiData';
 
-const SHOW_SHOWS = 'fruit-index/shows/SHOW_SHOWS';
+const SHOW_SHOWS = 'binge-box/shows/SHOW_SHOWS';
 
 export const showShows = (data) => ({
   type: SHOW_SHOWS,
@@ -18,7 +18,6 @@ const showBasics = (data) => {
     topic: show.summary,
     poster: show.image.medium,
   }));
-  console.log(showShows(shows));
   return showShows(shows);
 };
 

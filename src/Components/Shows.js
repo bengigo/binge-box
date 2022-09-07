@@ -19,7 +19,7 @@ const Shows = () => {
     <section className="main-display">
       {shows.map((show) => (
         <article key={show.id}>
-          <Link to="/ShowDetails">
+          <Link to={`/ShowDetails/${show.id}`} state={{ id: `${show.id}` }}>
             <p className="icon">
               <span className="material-symbols-outlined">
                 arrow_circle_right

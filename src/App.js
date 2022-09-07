@@ -12,7 +12,7 @@ function App() {
         <SearchField />
         <Routes>
           <Route path="/" element={<Shows />} />
-          <Route path="/ShowDetails" element={<ShowDetails />} />
+          <Route path="/ShowDetails/:id" element={<ShowDetails />} />
         </Routes>
       </div>
     </BrowserRouter>
