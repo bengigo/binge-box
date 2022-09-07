@@ -10,24 +10,10 @@ export default function ShowDetails() {
   useEffect(() => {
     dispatch(fetchDetails(id));
   }, []);
-  // vdfavds
-  details.map((card) => (
-    <div key={id} className="holidayBreakdownContainer">
-      <div key={id} className="holidayBreakdown">
-        <p>{card.name}</p>
-        <p>
-          Date:
-          {' '}
-          {card.id}
-        </p>
-        <p>
-          {' '}
-          Local Name:
-          {' '}
-          {card.language}
-        </p>
 
-      </div>
+  return (
+    <div>
+      <h3>{details.name}</h3>
     </div>
-  ));
+  );
 }

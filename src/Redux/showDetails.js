@@ -8,9 +8,8 @@ export const showDetails = (data) => ({
 });
 
 const showBasics = (data) => {
- 
   console.log(showDetails(data));
-  return showDetails(shows);
+  return showDetails(data);
 };
 
 export const fetchDetails = (id) => (dispatch) => {
