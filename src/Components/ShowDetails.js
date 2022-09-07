@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { fetchDetails } from '../Redux/showDetails';
 
 export default function ShowDetails() {
@@ -14,13 +14,14 @@ export default function ShowDetails() {
   return (
     <div>
       <div className="show-navigation">
-        <p className="icon">
-          <span className="material-symbols-outlined">
-            arrow_back_ios
-          </span>
-        </p>
-        <h3>{details.name}</h3>
+        <Link to="/">
 
+          <p className="icon">
+            <span className="material-symbols-outlined">arrow_back_ios</span>
+          </p>
+        </Link>
+
+        <h3>{details.name}</h3>
       </div>
 
       <div className="show-header">
@@ -32,7 +33,6 @@ export default function ShowDetails() {
             {' '}
             min
           </p>
-
         </div>
       </div>
 
