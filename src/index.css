@@ -1,3 +1,9 @@
+:root {
+  --light: #5687e5;
+  --medium: #4269b2;
+  --dark: #35548b;
+}
+
 *,
 *::before,
 *::after {
@@ -15,7 +21,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Gil-Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #4269b2;
+  background-color: var(--medium);
   width: 100vw;
 }
 

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Shows.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -10,10 +10,10 @@ const Shows = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if ((shows || []).length === 0) {
-      dispatch(fetchShows());
-    }
-  }, [dispatch, shows]);
+    dispatch(fetchShows());
+  }, []);
+
+  const [query, setQuery] = useState('');
 
   return (
     <div>
@@ -23,22 +23,26 @@ const Shows = () => {
           {' '}
           SHOWS AVAILABLE
         </p>
-        <p className="genre-list">
-          Options of genre: genre genre genre genre...
-        </p>
-        <input className="search-bar" placeholder="enter genre" />
-        {' '}
+        <input className="search-bar" placeholder="search by name" onChange={(event) => setQuery(event.target.value)} />
       </section>
 
       <section className="main-display">
-        {shows.map((show) => (
+        {shows.filter((show) => {
+          if (query === '') {
+            return true;
+          } if (show.name.toLowerCase().includes(query.toLowerCase())) {
+            return true;
+          } return false;
+        }).map((show) => (
           <article key={show.id}>
             <Link to={`/ShowDetails/${show.id}`} state={{ id: `${show.id}` }}>
+
               <p className="icon">
                 <span className="material-symbols-outlined">
                   arrow_circle_right
                 </span>
               </p>
+
               <h2 className="show-name">{show.name}</h2>
               <p className="rating">{show.rating}</p>
             </Link>

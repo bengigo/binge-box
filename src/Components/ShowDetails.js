@@ -58,6 +58,7 @@ export default function ShowDetails() {
           <p>{details.officialSite}</p>
         </li>
       </ul>
+
     </article>
   );
 }
