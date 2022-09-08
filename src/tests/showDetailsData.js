@@ -9,31 +9,6 @@ const detailedData = [
     ended: '2015-09-10',
     officialSite: 'http://www.cbs.com/shows/under-the-dome/',
   },
-//   {
-//     name: 'Person of Interest',
-//     language: 'English',
-//     status: 'Ended',
-//     runtime: 60,
-//     premiered: '2011-09-22',
-//     ended: '2016-06-21',
-//     officialSite: 'http://www.cbs.com/shows/person_of_interest/',
-//   },
-//   {
-//     name: 'Bitten',
-//     language: 'English',
-//     status: 'Ended',
-//     runtime: 60,
-//     premiered: '2014-01-11',
-//     ended: '2016-04-15',
-//     officialSite: 'http://bitten.space.ca/',
-//   },
-//   {
-//     name: 'Arrow',
-//     language: 'English',
-//     status: 'Ended',
-//     runtime: 60,
-//     premiered: '2012-10-10',
-//     ended: '2020-01-28',
-//     officialSite: 'http://www.cwtv.com/shows/arrow',
-//   },
 ];
+
+export default detailedData;
