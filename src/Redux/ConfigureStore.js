@@ -1,10 +1,11 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
-
-import showsReducer from './shows';
+import DetailsReducer from './showDetails';
+import ShowsReducer from './shows';
 
 const rootReducer = combineReducers({
-  shows: showsReducer,
+  shows: ShowsReducer,
+  details: DetailsReducer,
 });
 
 const store = configureStore({

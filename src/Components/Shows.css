@@ -1,0 +1,51 @@
+.show-list {
+  display: grid;
+  grid: 1fr / auto auto;
+  list-style-type: none;
+}
+
+li:nth-child(4n+3) {
+  background-color: #3f62a4;
+}
+
+li:nth-child(4n+2) {
+  background-color: #3f62a4;
+}
+
+.search-field {
+  background-color: var(--dark);
+  padding: 15px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.count {
+  padding: 8px;
+}
+
+input {
+  color: black;
+}
+
+.material-symbols-outlined {
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}

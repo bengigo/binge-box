@@ -1,5 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import './Shows.css';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { fetchShows } from '../Redux/shows';
 
 const Shows = () => {
@@ -8,36 +10,48 @@ const Shows = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if ((shows || []).length === 0) {
-      dispatch(fetchShows());
-    }
-  }, [dispatch, shows]);
+    dispatch(fetchShows());
+  }, []);
+
+  const [query, setQuery] = useState('');
 
   return (
-    // şimdi bu satırın altında bir display structure yapalım
-    <section className="main-display">
-      {/* //     <article>
-    //         <a className='details-link'>
-    //             <p className='icon'></p>
-    //             <h2 className='show-name'></h2>
-    //             <p className='rating'></p>
-    //         </a>
-    //     </article> */}
-      {shows.map((show) => (
-        <article key={show.id}>
-          {/* make this button a link when it's ready */}
-          <button type="button" className="details-link {show.id}">
-            <p className="icon">
-              <span className="material-symbols-outlined">
-                arrow_circle_right
-              </span>
-            </p>
-            <h2 className="show-name">{show.name}</h2>
-            <p className="rating">{show.rating}</p>
-          </button>
-        </article>
-      ))}
-    </section>
+    <div>
+      <section className="search-field">
+        <p className="count">
+          {shows.length}
+          {' '}
+          SHOWS AVAILABLE
+        </p>
+        <input className="search-bar" placeholder="search by name" onChange={(event) => setQuery(event.target.value)} />
+      </section>
+
+      <section className="main-display">
+        <ul className="show-list">
+          {shows.filter((show) => {
+            if (query === '') {
+              return true;
+            } if (show.name.toLowerCase().includes(query.toLowerCase())) {
+              return true;
+            } return false;
+          }).map((show) => (
+            <li key={show.id}>
+              <Link to={`/ShowDetails/${show.id}`} state={{ id: `${show.id}` }}>
+
+                <p className="icon">
+                  <span className="material-symbols-outlined">
+                    arrow_circle_right
+                  </span>
+                </p>
+
+                <h2 className="show-name">{show.name}</h2>
+                <p className="rating">{show.rating}</p>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
   );
 };
 
