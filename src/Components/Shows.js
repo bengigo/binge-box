@@ -27,27 +27,29 @@ const Shows = () => {
       </section>
 
       <section className="main-display">
-        {shows.filter((show) => {
-          if (query === '') {
-            return true;
-          } if (show.name.toLowerCase().includes(query.toLowerCase())) {
-            return true;
-          } return false;
-        }).map((show) => (
-          <article key={show.id}>
-            <Link to={`/ShowDetails/${show.id}`} state={{ id: `${show.id}` }}>
+        <ul className="show-list">
+          {shows.filter((show) => {
+            if (query === '') {
+              return true;
+            } if (show.name.toLowerCase().includes(query.toLowerCase())) {
+              return true;
+            } return false;
+          }).map((show) => (
+            <li key={show.id}>
+              <Link to={`/ShowDetails/${show.id}`} state={{ id: `${show.id}` }}>
 
-              <p className="icon">
-                <span className="material-symbols-outlined">
-                  arrow_circle_right
-                </span>
-              </p>
+                <p className="icon">
+                  <span className="material-symbols-outlined">
+                    arrow_circle_right
+                  </span>
+                </p>
 
-              <h2 className="show-name">{show.name}</h2>
-              <p className="rating">{show.rating}</p>
-            </Link>
-          </article>
-        ))}
+                <h2 className="show-name">{show.name}</h2>
+                <p className="rating">{show.rating}</p>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </section>
     </div>
   );
