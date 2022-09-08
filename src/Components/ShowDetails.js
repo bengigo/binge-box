@@ -19,10 +19,23 @@ export default function ShowDetails() {
         <Link to="/">
           <span className="material-symbols-outlined">arrow_back_ios</span>
         </Link>
-        <h3>{details.name}</h3>
       </div>
 
       <ul className="details-list">
+        <div className="details-header">
+          <li className="poster show-row">
+            <img src={details.poster} alt="poster" />
+            <h3>{details.name}</h3>
+
+          </li>
+
+        </div>
+
+        <li className="rating show-row">
+          <p>Rating:</p>
+          <p>{details.rating}</p>
+        </li>
+
         <li className="time show-row">
           <p>Runtime:</p>
           <p>
@@ -54,7 +67,7 @@ export default function ShowDetails() {
 
         <li className="official show-row">
           <p>Official web site:</p>
-          <p>{details.officialSite}</p>
+          <p>{details.url}</p>
         </li>
       </ul>
 

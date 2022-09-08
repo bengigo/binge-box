@@ -35,7 +35,7 @@ const Shows = () => {
               return true;
             } return false;
           }).map((show) => (
-            <li key={show.id}>
+            <li className="main-list" key={show.id}>
               <Link to={`/ShowDetails/${show.id}`} state={{ id: `${show.id}` }}>
 
                 <p className="icon">
