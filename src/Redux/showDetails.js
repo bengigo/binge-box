@@ -7,15 +7,10 @@ export const showDetails = (data) => ({
   data,
 });
 
-const showBasics = (data) => {
-  console.log(showDetails(data));
-  return showDetails(data);
-};
-
 export const fetchDetails = (id) => (dispatch) => {
   fetch(`${baseUrl}/${id}`)
     .then((response) => response.json())
-    .then((json) => dispatch(showBasics(json)));
+    .then((json) => dispatch(showDetails(json)));
 };
 
 const DetailsReducer = (state = [], action) => {
