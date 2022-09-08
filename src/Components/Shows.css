@@ -3,3 +3,24 @@
     grid: 1fr / auto auto;
 
 }
+
+.show-nav {
+    display: flex;
+    font-size: 30px;
+}
+
+.show-header {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+
+}
+
+
+
+.show-heading {
+}
+
+.poster {
+    height: 140px;
+    width: 100px;
+}

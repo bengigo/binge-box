@@ -18,6 +18,7 @@ const showBasics = (data) => {
     topic: show.summary,
     poster: show.image.medium,
   }));
+  console.log(showShows(shows));
   return showShows(shows);
 };
 
