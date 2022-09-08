@@ -15,7 +15,6 @@ export default function ShowDetails() {
 
   return (
     <article>
-      {/* navigation tmm */}
       <div className="show-nav">
         <Link to="/">
           <span className="material-symbols-outlined">arrow_back_ios</span>
