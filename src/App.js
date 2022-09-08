@@ -1,7 +1,6 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Header from './Components/Header';
 import Shows from './Components/Shows';
-import SearchField from './Components/SearchField';
 import ShowDetails from './Components/ShowDetails';
 
 function App() {
@@ -9,7 +8,6 @@ function App() {
     <BrowserRouter>
       <div>
         <Header />
-        <SearchField />
         <Routes>
           <Route path="/" element={<Shows />} />
           <Route path="/ShowDetails/:id" element={<ShowDetails />} />

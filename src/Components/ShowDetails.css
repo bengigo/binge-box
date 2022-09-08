@@ -1,7 +1,13 @@
+.show-nav {
+    display: flex;
+}
+
+
 h3 {
     font-size: large;
     margin: 0 auto;
 }
+
 
 .show-row {
     display: flex;
