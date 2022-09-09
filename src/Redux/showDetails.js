@@ -9,6 +9,7 @@ export const showDetails = (data) => ({
 
 const filterDetails = (data) => {
   const details = {
+    rating: JSON.stringify(data.rating.average),
     poster: data.image.medium,
     name: data.name,
     runtime: data.runtime,
