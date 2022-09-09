@@ -11,7 +11,7 @@ export default function ShowDetails() {
 
   useEffect(() => {
     dispatch(fetchDetails(id));
-  }, []);
+  }, [dispatch, id]);
 
   return (
     <article>
