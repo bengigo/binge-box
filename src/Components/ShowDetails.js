@@ -61,10 +61,11 @@ export default function ShowDetails() {
           <p>{details.ended}</p>
         </li>
 
-        <li className="official show-row">
+        {/* <li className="official show-row">
           <p>Official web site:</p>
+
           <p>{details.url}</p>
-        </li>
+        </li> */}
       </ul>
     </article>
   );
