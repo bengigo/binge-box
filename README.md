@@ -14,6 +14,10 @@
 
 [Live Demo Link](https://binge-box.netlify.app/)
 
+## Presentation Video
+
+[Presentation Video Link](https://www.loom.com/share/41e907735c8b4d6aac01010d1fbfd6a4)
+
 
 ## Getting Started
 
@@ -43,9 +47,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- The original template was desinged by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio).
 
 ## 📝 License
 
