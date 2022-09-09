@@ -23,6 +23,10 @@ input {
   list-style-type: none;
 }
 
+.main-list {
+  padding: 15px;
+}
+
 .main-list:nth-child(4n + 3) {
   background-color: #3f62a4;
 }
