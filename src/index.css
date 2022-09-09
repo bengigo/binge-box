@@ -1,0 +1,26 @@
+:root {
+  --light: #5687e5;
+  --medium: #4269b2;
+  --dark: #35548b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gil-Sans", sans-serif;
+  color: #fefcff;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Gil-Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--medium);
+  width: 100vw;
+}

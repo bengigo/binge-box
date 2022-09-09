@@ -1,0 +1,35 @@
+.show-nav {
+  display: flex;
+  background-color: var(--medium);
+}
+
+.details-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  background-color: var(--medium);
+}
+
+.details-poster {
+  height: 150px;
+}
+
+h3 {
+  font-size: 25px;
+  text-align: right;
+}
+
+.show-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+}
+
+.show-row:nth-child(even) {
+  background-color: var(--light);
+}
+
+.show-row:nth-child(odd) {
+  background-color: #3f62a4;
+}
