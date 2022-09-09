@@ -23,12 +23,8 @@ export default function ShowDetails() {
 
       <ul className="details-list">
         <div className="details-header">
-          <li className="poster show-row">
-            <img className="detail-poster" src={details.poster} alt="poster" />
-            <h3>{details.name}</h3>
-
-          </li>
-
+          <img className="details-poster" src={details.poster} alt="poster" />
+          <h3>{details.name}</h3>
         </div>
 
         <li className="rating show-row">
@@ -70,7 +66,6 @@ export default function ShowDetails() {
           <p>{details.url}</p>
         </li>
       </ul>
-
     </article>
   );
 }
