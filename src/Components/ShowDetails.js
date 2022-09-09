@@ -24,7 +24,7 @@ export default function ShowDetails() {
       <ul className="details-list">
         <div className="details-header">
           <li className="poster show-row">
-            <img src={details.poster} alt="poster" />
+            <img className="detail-poster" src={details.poster} alt="poster" />
             <h3>{details.name}</h3>
 
           </li>

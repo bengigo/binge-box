@@ -1,7 +1,9 @@
 import './Header.css';
 
 const Header = () => (
-  <h1>WELCOME TO BINGE BOX</h1>
+  <div className="header-container">
+    <h1>WELCOME TO BINGE BOX</h1>
+  </div>
 );
 
 export default Header;

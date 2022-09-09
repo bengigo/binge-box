@@ -7,20 +7,6 @@ export const showDetails = (data) => ({
   data,
 });
 
-// const showBasics = (data) => {
-//   const shows = data.map((show) => ({
-//     // id: show.id,
-//     // name: show.name,
-//     // language: show.language,
-//     // genres: show.genres,
-//     // runtime: show.runtime,
-//     // rating: JSON.stringify(show.rating.average),
-//     // topic: show.summary,
-//     // poster: show.image.medium,
-//   }));
-//   return showShows(shows);
-// };
-
 const filterDetails = (data) => {
   const details = {
     poster: data.image.medium,

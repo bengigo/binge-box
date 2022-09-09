@@ -1,5 +1,13 @@
-h1 {
+.header-container {
+  background-image: url('./Assets/header-bg.jpeg');
+  background-size: contain;
+  background-blend-mode: hard-light;
   background-color: var(--light);
+  height: 100px;
+}
+
+h1 {
+  /* background-color: var(--light); */
   padding: 15px;
   text-align: center;
   font-size: 30px;
