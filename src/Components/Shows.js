@@ -11,7 +11,7 @@ const Shows = () => {
 
   useEffect(() => {
     dispatch(fetchShows());
-  }, []);
+  }, [dispatch, shows]);
 
   const [query, setQuery] = useState('');
 
