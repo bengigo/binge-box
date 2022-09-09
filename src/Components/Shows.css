@@ -1,7 +1,5 @@
 .search-field {
   background-color: var(--dark);
-
-  /* background-color: var(--light); */
   height: 160px;
   padding: 15px 5px;
   display: flex;
@@ -24,11 +22,6 @@ input {
   grid: 1fr / auto auto;
   list-style-type: none;
 }
-
-/* .main-list {
-  width: 100%;
-  height: 160px;
-} */
 
 .main-list:nth-child(4n + 3) {
   background-color: #3f62a4;
@@ -70,7 +63,3 @@ h2 {
   justify-content: end;
   width: 100%;
 }
-
-/* .detail-poster {
-  filter: hue(50%);
-} */
