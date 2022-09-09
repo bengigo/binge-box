@@ -25,6 +25,7 @@ input {
 
 .main-list {
   padding: 15px;
+  width: 50vw;
 }
 
 .main-list:nth-child(4n + 3) {
